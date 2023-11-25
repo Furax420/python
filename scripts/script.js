@@ -3,7 +3,6 @@ document.addEventListener('DOMContentLoaded', () => {
     const mainContent = document.getElementById('mainContent');
     const particlesBackground = document.getElementById('particles-background');
     const particlesForeground = document.getElementById('particles-foreground');
-    const darkModeToggle = document.getElementById('darkModeToggle');
     const body = document.body;
 
     document.getElementById('buttonLink').addEventListener('click', () => {

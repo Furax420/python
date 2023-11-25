@@ -89,6 +89,21 @@ body {
     opacity: 1;
 }
 
+#loading-page h1 {
+  z-index: 10; /* Valeur supérieure à celle des éléments de fond */
+  position: relative; /* S'assurer qu'il est positionné correctement */
+  color: white; /* Ou toute autre couleur visible sur votre fond */
+  top: 25vh;
+  margin-top: 0px;
+}
+
+#loading-page p {
+  z-index: 10; /* Valeur supérieure à celle des éléments de fond */
+  position: relative; /* S'assurer qu'il est positionné correctement */
+  color: white; /* Ou toute autre couleur visible sur votre fond */
+top: 30vh;  text-align: center;
+}
+
 #particles-background {
     background: #2c2d44;
     background-image: -moz-linear-gradient(45deg, #3f3251 2%, #002025 100%);
