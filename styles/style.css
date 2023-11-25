@@ -1,33 +1,37 @@
-:root {
-    background: #2c2d44;
-    background-image: -moz-linear-gradient(45deg, #3f3251 2%, #002025 100%);
-    background-image: -webkit-linear-gradient(45deg, #3f3251 2%, #002025 100%);
-    background-image: linear-gradient(45deg, #3f3251 2%, #002025 100%);    --text-color: #000;
-    height: 100vh;
-}
-
 body {
+    font-family: "proxima-nova-soft", sans-serif;
     background-color: var(--background-color);
     color: var(--text-color);
     transition: background-color 0.3s, color 0.3s;
-    animation: fadeInAnimation 1s ease-in-out forwards; /* Ajout de 'forwards' pour maintenir l'état final */
+    --background-color: #2c2d44;
+    --text-color: #000;
+    background-image: -moz-linear-gradient(45deg, #3f3251 2%, #002025 100%);
+    background-image: -webkit-linear-gradient(45deg, #3f3251 2%, #002025 100%);
+    background-image: linear-gradient(45deg, #3f3251 2%, #002025 100%);   
+     --text-color: #000;
+    height: 100vh;
 }
 
-@keyframes fadeInAnimation {
-    from { opacity: 0; }
-    to { opacity: 1; }
+.content-section {
+    transition: opacity 0.5s ease-in-out;
+    opacity: 1;
 }
-
 
 .dark-mode {
     --background-color: #363537;
     --text-color: #FAFAFA;
 }
-
+header {
+display: flex;
+flex-direction: row;
+justify-content: space-between;
+align-items: center;
+padding: 10px;
+width: 100%;
+background: #ddd;
+}
 nav {
-    background: #ddd;
     padding: 10px;
-    text-align: right;
 }
 
 #darkModeToggle {

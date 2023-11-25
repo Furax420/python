@@ -3,24 +3,58 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="/styles/loading.css">
     <link rel="stylesheet" href="/styles/style.css">
-    <link rel="stylesheet" href="/styles/style_dark.css">
     <link rel="icon" href="/sources/favico.ico" />
     <title>Réseau PythOn</title>
 </head>
-
 <body>
-    <header><body>
-        <nav>
-            <button id="darkModeToggle">Mode Sombre</button>
-        </nav>
-    </header>
-    <main>
-        <h1>Bienvenue sur Notre Site Vitrine</h1>
-        <p>Ceci est un exemple de contenu.</p>
-        
-    </main>
-    <script src="scripts/script.js" defer></script>
+    <!-- Section de chargement -->
+    <div id="loadingSection" class="content-section">
+        <div id="particles-background" class="vertical-centered-box"></div>
+        <div id="particles-foreground" class="vertical-centered-box"></div>
+        <div class="vertical-centered-box">
+            <div class="content">
+                <div class="loader-circle"></div>
+                <div class="loader-line-mask">
+                    <div class="loader-line"></div>
+                </div>
+                <a href="javascript:void(0);" id="buttonLink">
+                    <button class="button">
+                        <div class="bloom-container">
+                            <div class="button-inner">
+                                <div class="back"></div>
+                                <div class="front">
+                                    <img src="sources/favico-removebg-preview.png" alt="Logo Python" width="100%" onmousedown="return false">
+                                </div>
+                            </div>
+                        </div>
+                    </button>
+                </a>
+            </div>
+        </div>
+    </div>
+    
+    <!-- Contenu principal -->
+    <div id="mainContent" class="content-section" style="display: none;">
+        <header>
+            <nav>
+                <a href="index.html">
+                    <img src="/sources/favico-removebg-preview.png" alt="logo_python" onmousedown="return false">
+                </a>
+            </nav>
+
+            <nav>
+                <button id="darkModeToggle">Mode Sombre</button>
+            </nav>
+        </header>
+        <main>
+            <h1>Bienvenue sur Notre Site Vitrine</h1>
+            <p>Ceci est un exemple de contenu.</p>
+        </main>
+    </div>
+
     <script src="scripts/loading.js" defer></script>
+    <script src="scripts/script.js" defer></script>
 </body>
 </html>

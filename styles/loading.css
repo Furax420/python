@@ -85,6 +85,8 @@ body {
     width: 202%;
     height: 202%;
     transform: scale3d(0.5, 0.5, 1);
+    transition: opacity 0.5s ease-in-out;
+    opacity: 1;
 }
 
 #particles-background {
@@ -132,6 +134,7 @@ body {
 .button {
     background: none;
     border: none;
+    cursor: pointer;
   }
   
   .button .bloom-container {
@@ -241,3 +244,4 @@ body {
   .opacity-zero {
     opacity: 0 !important; /* Utilisez !important pour garantir la priorité de cette règle */
 }
+

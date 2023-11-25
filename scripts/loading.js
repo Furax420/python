@@ -43,23 +43,3 @@ particleground(document.getElementById('particles-background'), {
   parallaxMultiplier: 20, // Lower the number is more extreme parallax
   particleRadius: 2, // Dot size
 });
-
-
-document.getElementById('buttonLink').addEventListener('click', function() {
-    this.classList.add('button-click-animation'); // Déclenche l'animation
-
-    this.addEventListener('animationend', function() {
-        // Sélectionne tous les éléments sauf le body
-        var allElementsExceptBody = document.querySelectorAll('body *');
-
-        // Applique la classe 'opacity-zero' à chaque élément
-        allElementsExceptBody.forEach(function(element) {
-            element.classList.add('opacity-zero');
-        });
-
-        // Redirection après un court délai pour permettre l'effet d'opacité
-        setTimeout(function() {
-            window.location.href = 'index.html';
-        }, 200); // 100 ms pour permettre l'effet visuel de l'opacité
-    }, {once: true});
-});
