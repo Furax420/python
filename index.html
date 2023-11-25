@@ -3,56 +3,66 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Réseau PythOn</title>
     <link rel="stylesheet" href="/styles/loading.css">
     <link rel="stylesheet" href="/styles/style.css">
     <link rel="icon" href="/sources/favico.ico" />
-    <title>Réseau PythOn</title>
 </head>
 <body>
     <!-- Section de chargement -->
-    <div id="loadingSection" class="content-section">
-        <div id="particles-background" class="vertical-centered-box"></div>
-        <div id="particles-foreground" class="vertical-centered-box"></div>
-        <div class="vertical-centered-box">
-            <div class="content">
-                <div class="loader-circle"></div>
-                <div class="loader-line-mask">
-                    <div class="loader-line"></div>
-                </div>
-                <a href="javascript:void(0);" id="buttonLink">
-                    <button class="button">
-                        <div class="bloom-container">
-                            <div class="button-inner">
-                                <div class="back"></div>
-                                <div class="front">
-                                    <img src="sources/favico-removebg-preview.png" alt="Logo Python" width="100%" onmousedown="return false">
+    <section id="loading-page">
+        <div id="loadingSection" class="content-section">
+            <div id="particles-background" class="vertical-centered-box"></div>
+            <div id="particles-foreground" class="vertical-centered-box"></div>
+            <div class="vertical-centered-box">
+                <div class="content">
+                    <div class="loader-circle"></div>
+                    <div class="loader-line-mask">
+                        <div class="loader-line"></div>
+                    </div>
+                    <a href="javascript:void(0);" id="buttonLink">
+                        <button class="button">
+                            <div class="bloom-container">
+                                <div class="button-inner">
+                                    <div class="back"></div>
+                                    <div class="front">
+                                        <img src="sources/favico-removebg-preview.png" alt="Logo Python" width="100%" onmousedown="return false">
+                                    </div>
                                 </div>
                             </div>
-                        </div>
-                    </button>
-                </a>
+                        </button>
+                    </a>
+                </div>
             </div>
         </div>
-    </div>
-    
+    </section>
+
     <!-- Contenu principal -->
     <div id="mainContent" class="content-section" style="display: none;">
         <header>
-            <nav>
-                <a href="index.html">
-                    <img src="/sources/favico-removebg-preview.png" alt="logo_python" onmousedown="return false">
-                </a>
-            </nav>
+            <img src="/sources/favico-removebg-preview.png" alt="logo_python" onmousedown="return false" class="main_logo">
+            <div class="nav-bar"> 
+                <nav>
+                    
+                </nav>
 
-            <nav>
-                <button id="darkModeToggle">Mode Sombre</button>
-            </nav>
+                <nav>
+                    <button id="darkModeToggle">Mode Sombre</button>
+                </nav>
+            </div>
         </header>
         <main>
-            <h1>Bienvenue sur Notre Site Vitrine</h1>
+            <div class="main_title">
+            <h1>Réseaux PythOn - UERX</h1>
+            </div>
             <p>Ceci est un exemple de contenu.</p>
+            <div id="card-container"></div>
+
+              
         </main>
     </div>
+
+
 
     <script src="scripts/loading.js" defer></script>
     <script src="scripts/script.js" defer></script>

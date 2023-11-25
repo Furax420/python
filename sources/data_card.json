@@ -1,0 +1,36 @@
+[
+    {
+      "id": "card1",
+      "title": "Card Title 1",
+      "description": "Petit texte pour la carte 1",
+      "fullText": "Texte complet pour la modale de la carte 1",
+      "image": "/sources/card1.jpeg",
+      "imageModal": "/sources/card1.jpeg"
+    },
+    {
+      "id": "card2",
+      "title": "Card Title 2",
+      "description": "Petit texte pour la carte 2",
+      "fullText": "Texte complet pour la modale de la carte 2",
+      "image": "/sources/card2.png",
+      "imageModal": "/sources/card2Modal.png"
+
+    },
+    {
+      "id": "card2",
+      "title": "Card Title 2",
+      "description": "Petit texte pour la carte 2",
+      "fullText": "Texte complet pour la modale de la carte 2",
+      "image": "/sources/card2.png",     
+      "imageModal": "/sources/card1.jpeg"
+
+    },
+    {
+      "id": "card2",
+      "title": "Card Title 2",
+      "description": "Petit texte pour la carte 2",
+      "fullText": "Texte complet pour la modale de la carte 2",
+      "image": "/sources/card2.png"
+    }
+  ]
+  
