@@ -1,0 +1,39 @@
+:root {
+    background: #2c2d44;
+    background-image: -moz-linear-gradient(45deg, #3f3251 2%, #002025 100%);
+    background-image: -webkit-linear-gradient(45deg, #3f3251 2%, #002025 100%);
+    background-image: linear-gradient(45deg, #3f3251 2%, #002025 100%);    --text-color: #000;
+    height: 100vh;
+}
+
+body {
+    background-color: var(--background-color);
+    color: var(--text-color);
+    transition: background-color 0.3s, color 0.3s;
+    animation: fadeInAnimation 1s ease-in-out forwards; /* Ajout de 'forwards' pour maintenir l'état final */
+}
+
+@keyframes fadeInAnimation {
+    from { opacity: 0; }
+    to { opacity: 1; }
+}
+
+
+.dark-mode {
+    --background-color: #363537;
+    --text-color: #FAFAFA;
+}
+
+nav {
+    background: #ddd;
+    padding: 10px;
+    text-align: right;
+}
+
+#darkModeToggle {
+    background: #444;
+    color: white;
+    border: none;
+    padding: 5px 10px;
+    cursor: pointer;
+}
