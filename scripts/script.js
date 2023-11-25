@@ -14,21 +14,13 @@ document.addEventListener('DOMContentLoaded', () => {
 
         setTimeout(() => {
             loadingSection.style.display = 'none';
+            body.style.userSelect = 'auto';
             mainContent.style.display = 'block';
             mainContent.style.opacity = 1;
         }, 500); // Durée de l'animation en ms
     });
 
-    // Gestion du mode sombre
-    const darkModeOn = localStorage.getItem('darkMode') === 'true';
-    if (darkModeOn) {
-        body.classList.add('dark-mode');
-    }
-
-    darkModeToggle.addEventListener('click', () => {
-        body.classList.toggle('dark-mode');
-        localStorage.setItem('darkMode', body.classList.contains('dark-mode'));
-    });
+    
 });
 
 
@@ -69,6 +61,12 @@ function createCard(cardData) {
       <p class="card__description">${cardData.description}</p>
     </div>
   `;
+
+  if (parseInt(cardData.id.replace(/[^\d.]/g, '')) % 2 === 0) {
+    card.style.boxShadow = '0px 0px 0px 5px #ffde57';
+  } else {
+    card.style.boxShadow = '0px 0px 0px 5px #4584b6';
+  }
   card.onclick = () => openModal(cardData);
   return card;
 }

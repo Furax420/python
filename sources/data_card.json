@@ -9,15 +9,15 @@
     },
     {
       "id": "card2",
-      "title": "Card Title 2",
-      "description": "Petit texte pour la carte 2",
-      "fullText": "Texte complet pour la modale de la carte 2",
+      "title": "Python",
+      "description": "Présentation du langage Python et de ses environnements virtuels",
+      "fullText": "Le langage Python est un outil puissant et polyvalent pour le développement d'applications, plébiscité pour sa simplicité et sa lisibilité. Il est idéal pour les débutants et les experts grâce à sa syntaxe claire et son écosystème riche. Python est utilisé dans divers domaines tels que le développement web, l'analyse de données, l'intelligence artificielle, et la science des données. Sa bibliothèque standard étendue et ses nombreux frameworks simplifient le développement d'applications robustes et évolutives. <br> Les environnements virtuels en Python sont des outils essentiels qui permettent de gérer les dépendances de projets de manière isolée. Ils aident à éviter les conflits entre les bibliothèques et garantissent que les projets utilisent les bonnes versions des packages nécessaires. Ceci est particulièrement utile dans les projets complexes où la compatibilité des dépendances est cruciale. Les environnements virtuels, comme venv, offrent une solution élégante pour maintenir l'ordre et la propreté dans les environnements de développement Python.",
       "image": "/sources/card2.png",
       "imageModal": "/sources/card2Modal.png"
 
     },
     {
-      "id": "card2",
+      "id": "card3",
       "title": "Card Title 2",
       "description": "Petit texte pour la carte 2",
       "fullText": "Texte complet pour la modale de la carte 2",
@@ -26,7 +26,7 @@
 
     },
     {
-      "id": "card2",
+      "id": "card4",
       "title": "Card Title 2",
       "description": "Petit texte pour la carte 2",
       "fullText": "Texte complet pour la modale de la carte 2",

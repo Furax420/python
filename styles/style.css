@@ -125,7 +125,6 @@ nav {
     justify-content: center;
     overflow: hidden;
     perspective: 1000px;
-    box-shadow: 0 0 0 5px #ffffff80;
     transition: all 0.6s cubic-bezier(0.175, 0.885, 0.32, 1.275);
     margin-top: 50px;
   }
@@ -149,10 +148,10 @@ nav {
     height: 100%;
     padding: 20px;
     box-sizing: border-box;
-    background-color: #f2f2f2;
+    background:linear-gradient(-120deg, #ffde57, #4584b6, #646464);    
     transform: rotateX(-90deg);
     transform-origin: bottom;
-    transition: all 0.6s cubic-bezier(0.175, 0.885, 0.32, 1.275);
+    /* transition: all 0.6s cubic-bezier(0.175, 0.885, 0.32, 1.275); */
   }
   
   .card:hover .card__content {
@@ -173,7 +172,7 @@ nav {
   .card__description {
     margin: 10px 0 0;
     font-size: 14px;
-    color: #777;
+    color: black solid;
     line-height: 1.4;
   }
   
@@ -192,7 +191,7 @@ nav {
   }
   
   .modal__content {
-    background: white;
+    background: rgb(228, 228, 228);
     width: 75%;
     height: 50%;
     padding: 20px;
@@ -201,16 +200,25 @@ nav {
     display: flex;
     justify-content: center;
     align-items: center;
+    border-radius: 25px;
   }
   
   .modal__image {
-    max-width: 40%;
+    max-width: 30%;
     width: fit-content;
     height: fit-content;
+    max-height: 80%;
   }
   
   .modal__text {
     width: 50%;
+    color: black;
+    height: fit-content;
+    border: 1px solid black;
+    background: rgb(248, 248, 248);
+    border-radius: 10px;
+    padding: 25px;
+    text-align: justify;
   }
   
   .modal__close {
@@ -226,7 +234,7 @@ nav {
     background: transparent;
     outline: none;
     border: 0;
-    color: #d4af37;
+    color: #ffde57;
     letter-spacing: 0.1em;
     font-family: monospace;
     font-size: 17px;
@@ -242,7 +250,7 @@ nav {
    .cube .bg-top {
     position: absolute;
     height: 10px;
-    background: #d4af37;
+    background: #ffde57;
     bottom: 100%;
     left: 5px;
     right: -5px;
@@ -261,13 +269,13 @@ nav {
     bottom: 0;
     top: 0;
     right: 0;
-    background: #d4af37;
+    background: #ffde57;
     transition: all 0.4s;
    }
    
    .cube .bg-right {
     position: absolute;
-    background: #d4af37;
+    background: #ffde57;
     top: -5px;
     z-index: 0;
     bottom: 5px;
@@ -282,7 +290,7 @@ nav {
    }
    
    .cube .bg-inner {
-    background: #28282d;
+    background: rgb(51, 51, 51);
     position: absolute;
     left: 2px;
     right: 2px;
@@ -296,19 +304,19 @@ nav {
    }
    
    .cube:hover .bg-inner {
-    background: #d4af37;
+    background: rgb(51, 51, 51);
     transition: all 0.4s;
    }
    
    .cube:hover .text {
-    color: #28282d;
+    color: #4584b6;
     transition: all 0.4s;
    }
    
    .cube:hover .bg-right,
    .cube:hover .bg,
    .cube:hover .bg-top {
-    background: #28282d;
+    background: #4584b6;
    }
    
    .cube:active {
