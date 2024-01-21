@@ -144,8 +144,26 @@
     animation: bounce .1s linear;
    }
    
+   .modal__redirect {
+    text-decoration: none; /* Supprime le soulignement */
+text-align: center;
+  }
+  
+
    @keyframes bounce {
     50% {
      transform: scale(0.9);
     }
+   }
+
+   .modal__main {
+    display: flex;
+    flex-direction: column ;
+    justify-content: center;
+    align-items: center;
+    gap: 50px;
+   }
+
+   .modal__main > a {
+    width: 150px;
    }

@@ -67,34 +67,69 @@ function createCard(cardData) {
 function openModal(cardData) {
   const modal = document.createElement('div');
   modal.className = 'modal';
-  modal.innerHTML = `
-    <div class="modal__content">
-      <img src="${cardData.imageModal}" alt="${cardData.title}" class="modal__image">
-      <div class="modal__text">${cardData.fullText}</div>
-      <button type="button" class="btn cube cube-hover modal__close">
-      <div class="bg-top">
-      <div class="bg-inner"></div>
-      </div>
-      <div class="bg-right">
-      <div class="bg-inner"></div>
-      </div>
-      <div class="bg">
-      <div class="bg-inner"></div>
-      </div>
-      <div class="text">Fermer</div>
-    </button>    </div>
-  `;
 
-  const closeButton = modal.querySelector('.modal__close');
+  const modalContent = document.createElement('div');
+  modalContent.className = 'modal__content';
+
+  const image = document.createElement('img');
+  image.src = cardData.imageModal;
+  image.alt = cardData.title;
+  image.className = 'modal__image';
+
+  const modalMain = document.createElement('div');
+  modalMain.className = 'modal__main';
+
+  const modalText = document.createElement('div');
+  modalText.className = 'modal__text';
+  modalText.innerHTML = cardData.fullText;
+
+  // Ajout de l'image et du texte principal à modalMain
+  modalMain.appendChild(modalText);
+
+  // Vérifie si un lien de redirection et un texte pour le bouton sont fournis et non vides
+  if (cardData.redirectionLink && cardData.redirectionLink.trim() !== '' &&
+      cardData.redirectButtonText && cardData.redirectButtonText.trim() !== '') {
+    const redirectButton = document.createElement('a');
+    redirectButton.href = cardData.redirectionLink;
+    redirectButton.className = 'btn cube cube-hover modal__redirect';
+    redirectButton.innerHTML = `
+      <div class="bg-top"><div class="bg-inner"></div></div>
+      <div class="bg-right"><div class="bg-inner"></div></div>
+      <div class="bg"><div class="bg-inner"></div></div>
+      <div class="text">${cardData.redirectButtonText}</div>
+    `;
+    // Ajout du bouton de redirection à modalMain
+    modalMain.appendChild(redirectButton);
+  }
+
+  // Ajout de modalMain à modalContent
+  modalContent.appendChild(image);
+  modalContent.appendChild(modalMain);
+
+  const closeButton = document.createElement('button');
+  closeButton.type = 'button';
+  closeButton.className = 'btn cube cube-hover modal__close';
+  closeButton.innerHTML = `
+    <div class="bg-top"><div class="bg-inner"></div></div>
+    <div class="bg-right"><div class="bg-inner"></div></div>
+    <div class="bg"><div class="bg-inner"></div></div>
+    <div class="text">Fermer</div>
+  `;
   closeButton.onclick = () => modal.remove();
-// Fermer la modale lorsque l'overlay est cliqué
-modal.onclick = (event) => {
+
+  // Ajout de modalContent et closeButton à modal
+  modalContent.appendChild(closeButton);
+  modal.appendChild(modalContent);
+
+  modal.onclick = (event) => {
     if (event.target === modal) {
       modal.remove();
     }
   };
+
   document.body.appendChild(modal);
 }
+
 
 
 // Obtenez le nom de la page actuelle
