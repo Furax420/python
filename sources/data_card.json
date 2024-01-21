@@ -33,10 +33,14 @@
     },
     {
       "id": "card4",
-      "title": "Card Title 2",
-      "description": "Petit texte pour la carte 2",
-      "fullText": "Texte complet pour la modale de la carte 2",
-      "image": "/sources/card2.png"
+      "title": "M-Files",
+      "description": "Présentation de l'outil M-Files",
+      "fullText": "M-Files est une plateforme de gestion de l'information qui aide les entreprises à trouver, partager et sécuriser les documents et les informations. M-Files est une plateforme de gestion de l'information qui aide les entreprises à trouver, partager et sécuriser les documents et les informations. M-Files est une plateforme de gestion de l'information qui aide les entreprises à trouver, partager et sécuriser les documents et les informations. M-Files est une plateforme de gestion de l'information qui aide les entreprises à trouver, partager et sécuriser les documents et les informations. M-Files est une plateforme de gestion de l'information qui aide les entreprises à trouver, partager et sécuriser les documents et les informations. M-Files est une plateforme de gestion de l'information qui aide les entreprises à trouver, partager et sécuriser les documents et les informations.",
+      "image": "/sources/62a4602720d7c99m-files-logo-white-high-resolution-square.jpg",
+      "imageModal": "/sources/62a4602720d7c99m-files-logo-white-high-resolution-square.jpg",
+      "redirectionLink": "../mfiles.html",
+      "redirectButtonText": "Visiter la page M-Files"
+
     }
   ]
   

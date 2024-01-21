@@ -1,0 +1,47 @@
+.collapse-container {
+    margin-bottom: 25px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
+  }
+  
+  .collapse-button {
+    padding: 0 1px;
+    cursor: pointer;
+    background-color: #817474;
+    height: 50px;
+    border: 3px solid #ccc;
+    border-radius: 15px;
+    text-align: left;
+    width: 80%;
+}
+
+.collapse-button p {
+    font-size: 20px;
+    font-weight: bold;
+    color: #000000;
+    margin: 0;
+    padding: 10px;
+}
+
+.collapse-arrow {
+    float: right;
+}
+
+.collapse-content {
+    display: none;
+    overflow: hidden;
+    background-color: #a8a8a8;
+    transition: max-height 0.2s ease-out;
+    border-radius: 15px;
+    width: 80%;
+    border: 1px solid #ccc;
+    border-top: none;
+  }
+
+  .collapse-content p, .collapse-content img {
+    padding: 10px;
+  }
+  

@@ -1,0 +1,25 @@
+.mfiles-content {
+    margin-top: 100px;
+}
+
+
+main {
+    display: flex;
+    flex-direction: column;
+}
+
+.mfiles-title {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-underline-position: under;
+    border: 2px solid #fff;
+    padding: 30px;
+    display: flex;
+    gap: 35px;
+    align-self: center;
+    border-radius: 35px;}
+
+.mfiles_logo {
+    width: 120px;
+}

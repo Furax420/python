@@ -4,10 +4,9 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Réseau PythOn</title>
-    <link rel="stylesheet" href="/styles/loading.css">
     <link rel="stylesheet" href="/styles/style.css">
-    <link rel="stylesheet" href="/styles/modal.css">
-    <link rel="stylesheet" href="/styles/accueil.css">
+    <link rel="stylesheet" href="/styles/collapse.css">
+    <link rel="stylesheet" href="/styles/gitlab.css">
 
     <link rel="icon" href="/sources/favico.ico" />
 </head>
@@ -37,18 +36,55 @@
                         </a>
                 </div>
             </div>
+        </div>
             
         </header>
         <main>
-            <div class="main_title">
-            <h1>Réseaux PythOn - UERX</h1>
-            </div>            
+            <div class="gitlab-title">
+            <h1>GitLab</h1>
+            <img src="/sources/gitlab_icon_130930.ico" alt="logo_gitlab" onmousedown="return false" class="gitlab_logo">
+            </div>
+            <section class="gitlab-content">
+                <div class="collapse-container">
+                    <button class="collapse-button">
+                      <span>Titre 1</span>
+                      <span class="collapse-arrow">&#9660;</span> <!-- Flèche vers le bas -->
+                    </button>
+                    <div class="collapse-content">
+                      <p>Texte caché pour le premier bouton. Lorem ipsum, dolor sit amet consectetur adipisicing elit. Rem tempora molestias officiis, corporis consectetur fuga quas pariatur laboriosam facere earum sed doloribus optio eaque necessitatibus, numquam laudantium hic ad nobis! Rerum distinctio quod enim, nulla tempore nam a aliquid voluptatibus iure maxime est excepturi asperiores fugit culpa obcaecati, velit recusandae? Fugit, ipsa cupiditate? Totam commodi fugit distinctio repudiandae ea ab voluptates. Nemo quidem, nesciunt dolorum velit deserunt hic dolore quo deleniti officia voluptatum placeat eum!</p>
+                      <img src="path-to-your-image1.jpg" alt="Image 1">
+                    </div>
+                  </div>
+                  
+                  <div class="collapse-container">
+                    <button class="collapse-button">
+                      <span>Titre 2</span>
+                      <span class="collapse-arrow">&#9660;</span>
+                    </button>
+                    <div class="collapse-content">
+                      <p>Texte caché pour le deuxième bouton.</p>
+                      <img src="path-to-your-image2.jpg" alt="Image 2">
+                    </div>
+                  </div>
+                  
+                  <div class="collapse-container">
+                    <button class="collapse-button">
+                      <p>Titre 3</p>
+                      <span class="collapse-arrow">&#9660;</span>
+                    </button>
+                    <div class="collapse-content">
+                      <p>Texte caché pour le troisième bouton.</p>
+                      <img src="path-to-your-image3.jpg" alt="Image 3">
+                    </div>
+                  </div>
+                  
+            </section>        
         </main>
-    </div>
 
 
 
     <script src="scripts/loading.js" defer></script>
     <script src="scripts/script.js" defer></script>
+    <script src="scripts/collapse.js" defer></script>
 </body>
 </html>

@@ -18,7 +18,7 @@
     display: flex;
     gap: 20px;
     display: flex;
-    justify-content: center;
+    justify-content: space-between;
     align-items: center;
     border-radius: 25px;
   }
@@ -161,9 +161,12 @@ text-align: center;
     flex-direction: column ;
     justify-content: center;
     align-items: center;
-    gap: 50px;
+    gap: 20px;
+    height: 100%;
    }
 
    .modal__main > a {
     width: 150px;
    }
+
+   
