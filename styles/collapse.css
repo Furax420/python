@@ -16,6 +16,9 @@
     border-radius: 15px;
     text-align: left;
     width: 80%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
 }
 
 .collapse-button p {
@@ -24,10 +27,14 @@
     color: #000000;
     margin: 0;
     padding: 10px;
+    width: 80%;
 }
+
 
 .collapse-arrow {
     float: right;
+    padding-right: 10px;
+    width: 12px;
 }
 
 .collapse-content {
