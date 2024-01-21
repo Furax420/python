@@ -6,16 +6,10 @@ document.addEventListener('DOMContentLoaded', () => {
     const body = document.body;
 
     document.getElementById('buttonLink').addEventListener('click', () => {
-        // Appliquer l'effet de fondu aux particules et à la section de chargement
-        loadingSection.style.opacity = 0;
-        particlesBackground.style.opacity = 0;
-        particlesForeground.style.opacity = 0;
-
+      
         setTimeout(() => {
-            loadingSection.style.display = 'none';
-            body.style.userSelect = 'auto';
-            mainContent.style.display = 'block';
-            mainContent.style.opacity = 1;
+           // redirection vert la page d'accueil
+            window.location.href = '../accueil.html';
         }, 500); // Durée de l'animation en ms
     });
 
@@ -102,9 +96,12 @@ modal.onclick = (event) => {
   document.body.appendChild(modal);
 }
 
-// Création et ajout des cartes au DOM
-dataCards.forEach(cardData => {
-  const cardElement = createCard(cardData);
-  document.body.appendChild(cardElement);
-});
 
+// Obtenez le nom de la page actuelle
+var pageName = window.location.pathname.split("/").pop().split(".")[0];
+
+// Ajoutez la classe "active" au lien de navigation correspondant
+var navLink = document.querySelector(".nav-redirect." + pageName);
+if (navLink) {
+    navLink.classList.add("active");
+}
